@@ -1,24 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>江大爷的博客</title><link>https://baidu8.github.io/Gmeek</link><description>梦到什么说什么</description><copyright>江大爷的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=726817119&amp;s=100</url><title>avatar</title><link>https://baidu8.github.io/Gmeek</link></image><lastBuildDate>Mon, 05 Jan 2026 13:58:19 +0000</lastBuildDate><managingEditor>江大爷的博客</managingEditor><ttl>60</ttl><webMaster>江大爷的博客</webMaster><item><title>试试自定义参数</title><link>https://baidu8.github.io/Gmeek/post/shi-shi-zi-ding-yi-can-shu.html</link><description>单篇文章自定义用法
-
-```
-&lt;!-- ##{'style':'&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;'}## --&gt;
-&lt;!-- ##{'script':'&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;'}## --&gt;
-```
-
-多种自定义参数
-
-```
-&lt;!-- ##{'script':'&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;','style':'&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;','timestamp':1490764800}## --&gt;
-```
-
-自定义全局文章参数
-添加全局文章页面的style和script，在config.json文件中添加
-
-```
-'style':'&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;',
-'script':'&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;',
-```。</description><guid isPermaLink="true">https://baidu8.github.io/Gmeek/post/shi-shi-zi-ding-yi-can-shu.html</guid><pubDate>Mon, 05 Jan 2026 13:32:38 +0000</pubDate></item><item><title>Gmeek使用</title><link>https://baidu8.github.io/Gmeek/post/Gmeek-shi-yong.html</link><description>试试嵌入b站视频
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>江大爷的博客</title><link>https://baidu8.github.io/Gmeek</link><description>梦到什么说什么</description><copyright>江大爷的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=726817119&amp;s=100</url><title>avatar</title><link>https://baidu8.github.io/Gmeek</link></image><lastBuildDate>Mon, 05 Jan 2026 14:22:04 +0000</lastBuildDate><managingEditor>江大爷的博客</managingEditor><ttl>60</ttl><webMaster>江大爷的博客</webMaster><item><title>关于</title><link>https://baidu8.github.io/Gmeek/post/guan-yu.html</link><description>
+- 2026.1.5部署本站🕙。</description><guid isPermaLink="true">https://baidu8.github.io/Gmeek/post/guan-yu.html</guid><pubDate>Mon, 05 Jan 2026 13:32:38 +0000</pubDate></item><item><title>Gmeek使用</title><link>https://baidu8.github.io/Gmeek/post/Gmeek-shi-yong.html</link><description>试试嵌入b站视频
 
 `Gmeek-html&lt;iframe src='//player.bilibili.com/player.html?aid=18540496&amp;bvid=BV1dW411v78e&amp;cid=30250032&amp;high_quality=1' scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true' sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'&gt;&lt;/iframe&gt;`
 
