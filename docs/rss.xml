@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://baidu8.github.io/Gmeek</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://baidu8.github.io/Gmeek</link></image><lastBuildDate>Mon, 05 Jan 2026 13:50:28 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>试试自定义参数</title><link>https://baidu8.github.io/Gmeek/post/shi-shi-zi-ding-yi-can-shu.html</link><description>单篇文章自定义用法
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://baidu8.github.io/Gmeek</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://baidu8.github.io/Gmeek</link></image><lastBuildDate>Mon, 05 Jan 2026 13:57:01 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>试试自定义参数</title><link>https://baidu8.github.io/Gmeek/post/shi-shi-zi-ding-yi-can-shu.html</link><description>单篇文章自定义用法
 
 ```
 &lt;!-- ##{'style':'&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;'}## --&gt;
@@ -20,7 +20,40 @@
 'script':'&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;',
 ```。</description><guid isPermaLink="true">https://baidu8.github.io/Gmeek/post/shi-shi-zi-ding-yi-can-shu.html</guid><pubDate>Mon, 05 Jan 2026 13:32:38 +0000</pubDate></item><item><title>Gmeek使用</title><link>https://baidu8.github.io/Gmeek/post/Gmeek-shi-yong.html</link><description>试试嵌入b站视频
 
-Gmeek-html&lt;iframe src='//player.bilibili.com/player.html?aid=18540496&amp;bvid=BV1dW411v78e&amp;cid=30250032&amp;high_quality=1' scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true' sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'&gt;&lt;/iframe&gt;
+`Gmeek-html&lt;iframe src='//player.bilibili.com/player.html?aid=18540496&amp;bvid=BV1dW411v78e&amp;cid=30250032&amp;high_quality=1' scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true' sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'&gt;&lt;/iframe&gt;`
+
+### 高亮警报
+&gt; [!NOTE]
+&gt; Useful information that users should know, even when skimming content.
+
+&gt; [!TIP]
+&gt; Helpful advice for doing things better or more easily.
+
+&gt; [!IMPORTANT]
+&gt; Key information users need to know to achieve their goal.
+
+&gt; [!WARNING]
+&gt; Urgent info that needs immediate user attention to avoid problems.
+
+&gt; [!CAUTION]
+&gt; Advises about risks or negative outcomes of certain actions.
+```
+&gt; [!NOTE]
+&gt; Useful information that users should know, even when skimming content.
+
+&gt; [!TIP]
+&gt; Helpful advice for doing things better or more easily.
+
+&gt; [!IMPORTANT]
+&gt; Key information users need to know to achieve their goal.
+
+&gt; [!WARNING]
+&gt; Urgent info that needs immediate user attention to avoid problems.
+
+&gt; [!CAUTION]
+&gt; Advises about risks or negative outcomes of certain actions.
+```
+
 
 ### 使用方式
 在需要添加html标签的位置使用code方式，并且后面紧跟着Gmeek-html，然后才是html标签。</description><guid isPermaLink="true">https://baidu8.github.io/Gmeek/post/Gmeek-shi-yong.html</guid><pubDate>Mon, 05 Jan 2026 12:53:51 +0000</pubDate></item></channel></rss>
