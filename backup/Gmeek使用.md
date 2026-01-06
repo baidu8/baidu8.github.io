@@ -20,25 +20,24 @@
 ```
 `Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1604800941&bvid=BV1qm421M7Xs&cid=1557311907&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>`
 ```
-##参数使用
-
-###单篇参数
+## 参数使用
+### 单篇参数
 自定义单篇文章页面的style和script
 ```
 <!-- ##{"style":"<style>#postBody{font-size:20px}</style>"}## -->
 <!-- ##{"script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>"}## -->
 ```
-###同时多种参数
+### 同时多种参数
 ```
 <!-- ##{"script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>","style":"<style>#postBody{font-size:20px}</style>","timestamp":1490764800}## -->
 ```
-###引入全局参数
+### 引入全局参数
 添加全局文章页面的style和script，在`config.json`文件中添加
 ```
 "style":"<style>#postBody{font-size:20px}</style>",
 "script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>",
 ```
-###导入以前的文章
+### 导入以前的文章
 如需修改发布时间，可以在文章最后一行添加如下代码。里面的时间是采用时间戳的形式，可以用如下[网站](https://tool.lu/timestamp)转换。
 ```<!-- ##{"timestamp":1490764800}## -->```
 ## 高亮警报

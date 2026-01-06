@@ -103,22 +103,22 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p><iframe width="100%" height="460px" src="//player.bilibili.com/player.html?aid=18540496&bvid=BV1dW411v78e&cid=30250032&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe></p>
 <pre class="notranslate"><code class="notranslate">`Gmeek-html&lt;iframe src="//player.bilibili.com/player.html?isOutside=true&amp;aid=1604800941&amp;bvid=BV1qm421M7Xs&amp;cid=1557311907&amp;p=1&amp;autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"&gt;&lt;/iframe&gt;`
 </code></pre>
-<p>##参数使用</p>
-<p>###单篇参数<br>
-自定义单篇文章页面的style和script</p>
+<h2>参数使用</h2>
+<h3>单篇参数</h3>
+<p>自定义单篇文章页面的style和script</p>
 <pre class="notranslate"><code class="notranslate">&lt;!-- ##{"style":"&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;"}## --&gt;
 &lt;!-- ##{"script":"&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;"}## --&gt;
 </code></pre>
-<p>###同时多种参数</p>
+<h3>同时多种参数</h3>
 <pre class="notranslate"><code class="notranslate">&lt;!-- ##{"script":"&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;","style":"&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;","timestamp":1490764800}## --&gt;
 </code></pre>
-<p>###引入全局参数<br>
-添加全局文章页面的style和script，在<code class="notranslate">config.json</code>文件中添加</p>
+<h3>引入全局参数</h3>
+<p>添加全局文章页面的style和script，在<code class="notranslate">config.json</code>文件中添加</p>
 <pre class="notranslate"><code class="notranslate">"style":"&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;",
 "script":"&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;",
 </code></pre>
-<p>###导入以前的文章<br>
-如需修改发布时间，可以在文章最后一行添加如下代码。里面的时间是采用时间戳的形式，可以用如下<a href="https://tool.lu/timestamp" rel="nofollow">网站</a>转换。<br>
+<h3>导入以前的文章</h3>
+<p>如需修改发布时间，可以在文章最后一行添加如下代码。里面的时间是采用时间戳的形式，可以用如下<a href="https://tool.lu/timestamp" rel="nofollow">网站</a>转换。<br>
 <code class="notranslate">&lt;!-- ##{"timestamp":1490764800}## --&gt;</code></p>
 <h2>高亮警报</h2>
 <div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>Useful information that users should know, even when skimming content.</p>
