@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>江大爷的博客</title><link>https://baidu8.github.io</link><description>梦到什么说什么</description><copyright>江大爷的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=726817119&amp;s=100</url><title>avatar</title><link>https://baidu8.github.io</link></image><lastBuildDate>Tue, 06 Jan 2026 11:43:25 +0000</lastBuildDate><managingEditor>江大爷的博客</managingEditor><ttl>60</ttl><webMaster>江大爷的博客</webMaster><item><title>嵌入个代码片段试试</title><link>https://baidu8.github.io/post/qian-ru-ge-dai-ma-pian-duan-shi-shi.html</link><description>`Gmeek-html&lt;script src='https://gist.github.com/baidu8/7bf2a99eee05437218f3a7ecce9b766c.js'&gt;&lt;/script&gt;`
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>江大爷的博客</title><link>https://baidu8.github.io</link><description>梦到什么说什么</description><copyright>江大爷的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=726817119&amp;s=100</url><title>avatar</title><link>https://baidu8.github.io</link></image><lastBuildDate>Tue, 06 Jan 2026 12:13:15 +0000</lastBuildDate><managingEditor>江大爷的博客</managingEditor><ttl>60</ttl><webMaster>江大爷的博客</webMaster><item><title>嵌入个代码片段试试</title><link>https://baidu8.github.io/post/qian-ru-ge-dai-ma-pian-duan-shi-shi.html</link><description>`Gmeek-html&lt;script src='https://gist.github.com/baidu8/7bf2a99eee05437218f3a7ecce9b766c.js'&gt;&lt;/script&gt;`
 
 `Gmeek-html&lt;center id='hitokoto' style='font-family: 雅黑;font-size: 20px;'&gt;📌 获取中🔷🔻🔹🔺&lt;/center&gt;`
 
@@ -31,43 +31,6 @@ https://prod-streaming-video-msn-com.akamaized.net/f9e318a4-7575-4809-b371-7b34a
 https://prod-streaming-video-msn-com.akamaized.net/f9e318a4-7575-4809-b371-7b34a5807857/1f80c234-46af-41a5-8f50-8f0926e29a2c.mp4
 https://prod-streaming-video-msn-com.akamaized.net/87d3d62a-cfe2-4d03-8396-a1daf86b84ae/c2b325a7-0d9f-4b3f-a503-0568b15275b9.mp4
 https://prod-streaming-video-msn-com.akamaized.net/15fc0eea-1091-4a28-a9b6-8caaf6013cf1/62b4c40f-ad3c-4099-a59a-bfbe324a461c.mp4
-```。</description><guid isPermaLink="true">https://baidu8.github.io/post/cha-ru-shi-pin-shi-shi.html</guid><pubDate>Mon, 05 Jan 2026 15:15:20 +0000</pubDate></item><item><title>Gmeek使用</title><link>https://baidu8.github.io/post/Gmeek-shi-yong.html</link><description>试试嵌入b站视频
-
-`Gmeek-html&lt;iframe src='//player.bilibili.com/player.html?aid=18540496&amp;bvid=BV1dW411v78e&amp;cid=30250032&amp;high_quality=1' scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true' sandbox='allow-top-navigation allow-same-origin allow-forms allow-scripts'&gt;&lt;/iframe&gt;`
-
-### 高亮警报
-&gt; [!NOTE]
-&gt; Useful information that users should know, even when skimming content.
-
-&gt; [!TIP]
-&gt; Helpful advice for doing things better or more easily.
-
-&gt; [!IMPORTANT]
-&gt; Key information users need to know to achieve their goal.
-
-&gt; [!WARNING]
-&gt; Urgent info that needs immediate user attention to avoid problems.
-
-&gt; [!CAUTION]
-&gt; Advises about risks or negative outcomes of certain actions.
-```
-&gt; [!NOTE]
-&gt; Useful information that users should know, even when skimming content.
-
-&gt; [!TIP]
-&gt; Helpful advice for doing things better or more easily.
-
-&gt; [!IMPORTANT]
-&gt; Key information users need to know to achieve their goal.
-
-&gt; [!WARNING]
-&gt; Urgent info that needs immediate user attention to avoid problems.
-
-&gt; [!CAUTION]
-&gt; Advises about risks or negative outcomes of certain actions.
-```
-
-
-### 使用方式
+```。</description><guid isPermaLink="true">https://baidu8.github.io/post/cha-ru-shi-pin-shi-shi.html</guid><pubDate>Mon, 05 Jan 2026 15:15:20 +0000</pubDate></item><item><title>Gmeek使用</title><link>https://baidu8.github.io/post/Gmeek-shi-yong.html</link><description>## Gmeek-html使用
 在需要添加html标签的位置使用code方式，并且后面紧跟着Gmeek-html，然后才是html标签。</description><guid isPermaLink="true">https://baidu8.github.io/post/Gmeek-shi-yong.html</guid><pubDate>Mon, 05 Jan 2026 12:53:51 +0000</pubDate></item><item><title>关于</title><link>https://baidu8.github.io/about.html</link><description>
 - 2026.1.5部署本站🕙。</description><guid isPermaLink="true">https://baidu8.github.io/about.html</guid><pubDate>Mon, 05 Jan 2026 13:32:38 +0000</pubDate></item></channel></rss>
