@@ -21,6 +21,7 @@
 `Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1604800941&bvid=BV1qm421M7Xs&cid=1557311907&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>`
 ```
 ##参数使用
+
 ###单篇参数
 自定义单篇文章页面的style和script
 ```
@@ -74,3 +75,9 @@
 
 [Gmeek快速上手](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)
 [Gmeek进阶html标签](https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-wen-zhang-cha-ru-html-biao-qian.html)
+其他👇
+
+> [!TIP]
+> [配置单页](https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-you-shang-jiao-yuan-an-niu-pei-zhi.html)
+[static文件夹使用](https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91static-wen-jian-jia-shi-yong.html)
+[插件](https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-cha-jian-gong-neng-de-shi-yong.html)
