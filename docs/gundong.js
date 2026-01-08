@@ -1,7 +1,7 @@
 // ==========================================
 // 1. 图片辅助功能：自动添加懒加载
 // ==========================================
-document.addEventListener("DOMContentLoaded", function() {
+document。addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('#postBody img');
     images.forEach(img => {
         if (!img.hasAttribute('loading')) {
