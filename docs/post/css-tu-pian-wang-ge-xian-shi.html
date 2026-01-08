@@ -10,36 +10,100 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="`Gmeek-html<video width='100%' height='460px' controls poster src='https://prod-streaming-video-msn-com.akamaized.net/3f6ca508-598d-4cbd-a3e2-43deea7bc377/b60c553e-9f3f-4164-8850-700a9a73a899.mp4'></video>`
+<meta name="description" content="感觉单列不好看，修改下😊
+精简后放在 `config.json`下`'style':'<style>里面</style>',`
+```css
+/* 核心：只定位那些内部包含图片链接的 p 标签 */
+#postBody p:has(> a > img), 
+#postBody p:has(> img) {
+  display: grid;
+  /* 自适应列数，最小 150px */
+  grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
+  gap: 10px;
+  margin: 1.5rem 0;
+  align-items: start;
+}
 
-**几个视频壁纸链接**
+/* 隐藏这些特定 p 标签内的换行符 */
+#postBody p:has(img) br {
+  display: none;
+}
 
-```
-https://prod-streaming-video-msn-com.akamaized.net/3f6ca508-598d-4cbd-a3e2-43deea7bc377/b60c553e-9f3f-4164-8850-700a9a73a899.mp4
-https://prod-streaming-video-msn-com.akamaized.net/54cabe89-17bd-4116-8908-8501ebe48f6d/2e8ba8c7-a691-46d9-b5ae-d18050ce273a.mp4
-https://prod-streaming-video-msn-com.akamaized.net/f9e318a4-7575-4809-b371-7b34a5807857/1f80c234-46af-41a5-8f50-8f0926e29a2c.mp4
-https://prod-streaming-video-msn-com.akamaized.net/f9e318a4-7575-4809-b371-7b34a5807857/1f80c234-46af-41a5-8f50-8f0926e29a2c.mp4
-https://prod-streaming-video-msn-com.akamaized.net/87d3d62a-cfe2-4d03-8396-a1daf86b84ae/c2b325a7-0d9f-4b3f-a503-0568b15275b9.mp4
-https://prod-streaming-video-msn-com.akamaized.net/15fc0eea-1091-4a28-a9b6-8caaf6013cf1/62b4c40f-ad3c-4099-a59a-bfbe324a461c.mp4
+/* 处理只有一张图片的情况：让它占满全宽 */
+#postBody p:has(img) a:only-of-type,
+#postBody p:has(img) img:only-of-type {
+  grid-column: 1 / -1;
+}
+
+/* 图片样式设置 */
+#postBody p img {
+  width: 100% !important;
+  aspect-ratio: 1 / 1; /* 默认正方形 */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+		background-color: #f0f0f0;/* 懒加载 */
+}
+
+/* 只有一张图时，恢复自然高度，避免过大拉伸 */
+#postBody p:has(img) a:only-of-type img,
+#postBody p:has(img) img:only-of-type {
+  aspect-ratio: auto;
+  max-height: 550px;
+  width: auto !important; /* 如果是单图，不强制拉宽，保持原图大小比例 */
+  max-width: 100%;
+}
 ```。">
-<meta property="og:title" content="插入视频试试">
-<meta property="og:description" content="`Gmeek-html<video width='100%' height='460px' controls poster src='https://prod-streaming-video-msn-com.akamaized.net/3f6ca508-598d-4cbd-a3e2-43deea7bc377/b60c553e-9f3f-4164-8850-700a9a73a899.mp4'></video>`
+<meta property="og:title" content="css图片网格显示">
+<meta property="og:description" content="感觉单列不好看，修改下😊
+精简后放在 `config.json`下`'style':'<style>里面</style>',`
+```css
+/* 核心：只定位那些内部包含图片链接的 p 标签 */
+#postBody p:has(> a > img), 
+#postBody p:has(> img) {
+  display: grid;
+  /* 自适应列数，最小 150px */
+  grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
+  gap: 10px;
+  margin: 1.5rem 0;
+  align-items: start;
+}
 
-**几个视频壁纸链接**
+/* 隐藏这些特定 p 标签内的换行符 */
+#postBody p:has(img) br {
+  display: none;
+}
 
-```
-https://prod-streaming-video-msn-com.akamaized.net/3f6ca508-598d-4cbd-a3e2-43deea7bc377/b60c553e-9f3f-4164-8850-700a9a73a899.mp4
-https://prod-streaming-video-msn-com.akamaized.net/54cabe89-17bd-4116-8908-8501ebe48f6d/2e8ba8c7-a691-46d9-b5ae-d18050ce273a.mp4
-https://prod-streaming-video-msn-com.akamaized.net/f9e318a4-7575-4809-b371-7b34a5807857/1f80c234-46af-41a5-8f50-8f0926e29a2c.mp4
-https://prod-streaming-video-msn-com.akamaized.net/f9e318a4-7575-4809-b371-7b34a5807857/1f80c234-46af-41a5-8f50-8f0926e29a2c.mp4
-https://prod-streaming-video-msn-com.akamaized.net/87d3d62a-cfe2-4d03-8396-a1daf86b84ae/c2b325a7-0d9f-4b3f-a503-0568b15275b9.mp4
-https://prod-streaming-video-msn-com.akamaized.net/15fc0eea-1091-4a28-a9b6-8caaf6013cf1/62b4c40f-ad3c-4099-a59a-bfbe324a461c.mp4
+/* 处理只有一张图片的情况：让它占满全宽 */
+#postBody p:has(img) a:only-of-type,
+#postBody p:has(img) img:only-of-type {
+  grid-column: 1 / -1;
+}
+
+/* 图片样式设置 */
+#postBody p img {
+  width: 100% !important;
+  aspect-ratio: 1 / 1; /* 默认正方形 */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+		background-color: #f0f0f0;/* 懒加载 */
+}
+
+/* 只有一张图时，恢复自然高度，避免过大拉伸 */
+#postBody p:has(img) a:only-of-type img,
+#postBody p:has(img) img:only-of-type {
+  aspect-ratio: auto;
+  max-height: 550px;
+  width: auto !important; /* 如果是单图，不强制拉宽，保持原图大小比例 */
+  max-width: 100%;
+}
 ```。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://baidu8.github.io/post/cha-ru-shi-pin-shi-shi.html">
+<meta property="og:url" content="https://baidu8.github.io/post/css-tu-pian-wang-ge-xian-shi.html">
 <meta property="og:image" content="https://q1.qlogo.cn/g?b=qq&nk=726817119&s=100">
-<title>插入视频试试</title>
-
+<title>css图片网格显示</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 
 </head>
@@ -81,7 +145,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">插入视频试试</h1>
+<h1 class="postTitle">css图片网格显示</h1>
 <div class="title-right">
     <a href="https://baidu8.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -89,7 +153,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/baidu8/baidu8.github.io/issues/4" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/baidu8/baidu8.github.io/issues/10" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -105,15 +169,48 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><video width="100%" height="460px" controls poster src="https://prod-streaming-video-msn-com.akamaized.net/3f6ca508-598d-4cbd-a3e2-43deea7bc377/b60c553e-9f3f-4164-8850-700a9a73a899.mp4"></video></p>
-<p><strong>几个视频壁纸链接</strong></p>
-<pre class="notranslate"><code class="notranslate">https://prod-streaming-video-msn-com.akamaized.net/3f6ca508-598d-4cbd-a3e2-43deea7bc377/b60c553e-9f3f-4164-8850-700a9a73a899.mp4
-https://prod-streaming-video-msn-com.akamaized.net/54cabe89-17bd-4116-8908-8501ebe48f6d/2e8ba8c7-a691-46d9-b5ae-d18050ce273a.mp4
-https://prod-streaming-video-msn-com.akamaized.net/f9e318a4-7575-4809-b371-7b34a5807857/1f80c234-46af-41a5-8f50-8f0926e29a2c.mp4
-https://prod-streaming-video-msn-com.akamaized.net/f9e318a4-7575-4809-b371-7b34a5807857/1f80c234-46af-41a5-8f50-8f0926e29a2c.mp4
-https://prod-streaming-video-msn-com.akamaized.net/87d3d62a-cfe2-4d03-8396-a1daf86b84ae/c2b325a7-0d9f-4b3f-a503-0568b15275b9.mp4
-https://prod-streaming-video-msn-com.akamaized.net/15fc0eea-1091-4a28-a9b6-8caaf6013cf1/62b4c40f-ad3c-4099-a59a-bfbe324a461c.mp4
-</code></pre></div>
+<div class="markdown-body" id="postBody"><p>感觉单列不好看，修改下😊<br>
+精简后放在 <code class="notranslate">config.json</code>下<code class="notranslate">"style":"&lt;style&gt;里面&lt;/style&gt;",</code></p>
+<div class="highlight highlight-source-css"><pre class="notranslate"><span class="pl-c">/* 核心：只定位那些内部包含图片链接的 p 标签 */</span>
+<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent"></span><span class="pl-c1"></span><span class="pl-c1">&gt;</span> <span class="pl-ent">a</span> <span class="pl-c1">&gt;</span> <span class="pl-ent">img</span>)<span class="pl-kos">,</span> 
+<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent"></span><span class="pl-c1"></span><span class="pl-c1">&gt;</span> <span class="pl-ent">img</span>) {
+  <span class="pl-c1">display</span><span class="pl-kos">:</span> grid;
+  <span class="pl-c">/* 自适应列数，最小 150px */</span>
+  <span class="pl-c1">grid-template-columns</span><span class="pl-kos">:</span> <span class="pl-en">repeat</span>(auto-fill<span class="pl-kos">,</span> <span class="pl-en">minmax</span>(<span class="pl-en">min</span>(<span class="pl-c1">150<span class="pl-smi">px</span></span><span class="pl-kos">,</span> <span class="pl-c1">100<span class="pl-smi">%</span></span>)<span class="pl-kos">,</span> <span class="pl-c1">1<span class="pl-smi">fr</span></span>));
+  <span class="pl-c1">gap</span><span class="pl-kos">:</span> <span class="pl-c1">10<span class="pl-smi">px</span></span>;
+  <span class="pl-c1">margin</span><span class="pl-kos">:</span> <span class="pl-c1">1.5<span class="pl-smi">rem</span></span> <span class="pl-c1">0</span>;
+  <span class="pl-c1">align-items</span><span class="pl-kos">:</span> start;
+}
+
+<span class="pl-c">/* 隐藏这些特定 p 标签内的换行符 */</span>
+<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">br</span> {
+  <span class="pl-c1">display</span><span class="pl-kos">:</span> none;
+}
+
+<span class="pl-c">/* 处理只有一张图片的情况：让它占满全宽 */</span>
+<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">a</span><span class="pl-kos">:</span><span class="pl-c1">only-of-type</span><span class="pl-kos">,</span>
+<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">img</span><span class="pl-kos">:</span><span class="pl-c1">only-of-type</span> {
+  <span class="pl-c1">grid-column</span><span class="pl-kos">:</span> <span class="pl-c1">1</span> <span class="pl-c1">/</span> <span class="pl-c1">-1</span>;
+}
+
+<span class="pl-c">/* 图片样式设置 */</span>
+<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span> <span class="pl-ent">img</span> {
+  <span class="pl-c1">width</span><span class="pl-kos">:</span> <span class="pl-c1">100<span class="pl-smi">%</span></span> <span class="pl-k">!important</span>;
+  <span class="pl-c1">aspect-ratio</span><span class="pl-kos">:</span> <span class="pl-c1">1</span> <span class="pl-c1">/</span> <span class="pl-c1">1</span>; <span class="pl-c">/* 默认正方形 */</span>
+  <span class="pl-c1">object-fit</span><span class="pl-kos">:</span> cover;
+  <span class="pl-c1">border-radius</span><span class="pl-kos">:</span> <span class="pl-c1">8<span class="pl-smi">px</span></span>;
+  <span class="pl-c1">display</span><span class="pl-kos">:</span> block;
+		<span class="pl-c1">background-color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>f0f0f0</span>;<span class="pl-c">/* 懒加载 */</span>
+}
+
+<span class="pl-c">/* 只有一张图时，恢复自然高度，避免过大拉伸 */</span>
+<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">a</span><span class="pl-kos">:</span><span class="pl-c1">only-of-type</span> <span class="pl-ent">img</span><span class="pl-kos">,</span>
+<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">img</span><span class="pl-kos">:</span><span class="pl-c1">only-of-type</span> {
+  <span class="pl-c1">aspect-ratio</span><span class="pl-kos">:</span> auto;
+  <span class="pl-c1">max-height</span><span class="pl-kos">:</span> <span class="pl-c1">550<span class="pl-smi">px</span></span>;
+  <span class="pl-c1">width</span><span class="pl-kos">:</span> auto <span class="pl-k">!important</span>; <span class="pl-c">/* 如果是单图，不强制拉宽，保持原图大小比例 */</span>
+  <span class="pl-c1">max-width</span><span class="pl-kos">:</span> <span class="pl-c1">100<span class="pl-smi">%</span></span>;
+}</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;">🌹转载请注明出处🌹</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

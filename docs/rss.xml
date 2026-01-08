@@ -1,5 +1,48 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>江大爷的博客</title><link>https://baidu8.github.io</link><description>梦到什么说什么</description><copyright>江大爷的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=726817119&amp;s=100</url><title>avatar</title><link>https://baidu8.github.io</link></image><lastBuildDate>Thu, 08 Jan 2026 09:51:46 +0000</lastBuildDate><managingEditor>江大爷的博客</managingEditor><ttl>60</ttl><webMaster>江大爷的博客</webMaster><item><title>cf创建无服务器带后台博客</title><link>https://baidu8.github.io/post/cf-chuang-jian-wu-fu-wu-qi-dai-hou-tai-bo-ke.html</link><description>![](https://image.thum.io/get/https://blog.gezhong.vip/)
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>江大爷的博客</title><link>https://baidu8.github.io</link><description>梦到什么说什么</description><copyright>江大爷的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=726817119&amp;s=100</url><title>avatar</title><link>https://baidu8.github.io</link></image><lastBuildDate>Thu, 08 Jan 2026 14:15:24 +0000</lastBuildDate><managingEditor>江大爷的博客</managingEditor><ttl>60</ttl><webMaster>江大爷的博客</webMaster><item><title>css图片网格显示</title><link>https://baidu8.github.io/post/css-tu-pian-wang-ge-xian-shi.html</link><description>感觉单列不好看，修改下😊
+精简后放在 `config.json`下`'style':'&lt;style&gt;里面&lt;/style&gt;',`
+```css
+/* 核心：只定位那些内部包含图片链接的 p 标签 */
+#postBody p:has(&gt; a &gt; img), 
+#postBody p:has(&gt; img) {
+  display: grid;
+  /* 自适应列数，最小 150px */
+  grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
+  gap: 10px;
+  margin: 1.5rem 0;
+  align-items: start;
+}
+
+/* 隐藏这些特定 p 标签内的换行符 */
+#postBody p:has(img) br {
+  display: none;
+}
+
+/* 处理只有一张图片的情况：让它占满全宽 */
+#postBody p:has(img) a:only-of-type,
+#postBody p:has(img) img:only-of-type {
+  grid-column: 1 / -1;
+}
+
+/* 图片样式设置 */
+#postBody p img {
+  width: 100% !important;
+  aspect-ratio: 1 / 1; /* 默认正方形 */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+		background-color: #f0f0f0;/* 懒加载 */
+}
+
+/* 只有一张图时，恢复自然高度，避免过大拉伸 */
+#postBody p:has(img) a:only-of-type img,
+#postBody p:has(img) img:only-of-type {
+  aspect-ratio: auto;
+  max-height: 550px;
+  width: auto !important; /* 如果是单图，不强制拉宽，保持原图大小比例 */
+  max-width: 100%;
+}
+```。</description><guid isPermaLink="true">https://baidu8.github.io/post/css-tu-pian-wang-ge-xian-shi.html</guid><pubDate>Thu, 08 Jan 2026 14:14:34 +0000</pubDate></item><item><title>cf创建无服务器带后台博客</title><link>https://baidu8.github.io/post/cf-chuang-jian-wu-fu-wu-qi-dai-hou-tai-bo-ke.html</link><description>![](https://image.thum.io/get/https://blog.gezhong.vip/)
 
 1. 复制里面的`infex.js`代码
 2. 在cf里选择`workers`部署，全选粘贴
