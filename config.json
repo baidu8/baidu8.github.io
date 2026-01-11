@@ -15,8 +15,8 @@
     "exlink":{"导航":"https://baidu8.github.io/dh"},
     "showPostSource": 1,
     "bottomText": "🌹转载请注明出处🌹",
-    "indexScript":"<script src='https://gistcdn.githack.com/baidu8/d0c62a035f1e9d35682918737e77bc83/raw/xiaxue.js'></script><script src='https://rawcdn.githack.com/baidu8/baidu8.github.io/3923c93ad93d3d5c74320a8e81de082c93263612/static/gundong.js'></script>",
+    "indexScript":"<script src='/下雪.js'></script>",
     "allHead": "<link rel='stylesheet' type='text/css' href='/zdy.css'><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>",
-    "script": "<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script><script src='https://gistcdn.githack.com/baidu8/d0c62a035f1e9d35682918737e77bc83/raw/xiaxue.js'></script><script src='https://rawcdn.githack.com/baidu8/baidu8.github.io/3923c93ad93d3d5c74320a8e81de082c93263612/static/gundong.js'></script>",
+    "script": "<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script><script src='/下雪.js'></script>",
     "GMEEK_VERSION": "last"
 }
