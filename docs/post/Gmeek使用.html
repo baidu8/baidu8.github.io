@@ -5,105 +5,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
-    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
+    <link rel='stylesheet' type='text/css' href='/zdy.css'><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script><script src='/gundong.js'></script><script src='https://gistcdn.githack.com/baidu8/d0c62a035f1e9d35682918737e77bc83/raw/xiaxue.js'></script>
     <link rel="icon" href="/ico.png"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="感觉单列不好看，修改下😊
-精简后放在 `config.json`下`'style':'<style>里面</style>',`
-```css
-/* 核心：只定位那些内部包含图片链接的 p 标签 */
-#postBody p:has(> a > img), 
-#postBody p:has(> img) {
-  display: grid;
-  /* 自适应列数，最小 150px */
-  grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
-  gap: 10px;
-  margin: 1.5rem 0;
-  align-items: start;
-}
-
-/* 隐藏这些特定 p 标签内的换行符 */
-#postBody p:has(img) br {
-  display: none;
-}
-
-/* 处理只有一张图片的情况：让它占满全宽 */
-#postBody p:has(img) a:only-of-type,
-#postBody p:has(img) img:only-of-type {
-  grid-column: 1 / -1;
-}
-
-/* 图片样式设置 */
-#postBody p img {
-  width: 100% !important;
-  aspect-ratio: 1 / 1; /* 默认正方形 */
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-		background-color: #f0f0f0;/* 懒加载 */
-}
-
-/* 只有一张图时，恢复自然高度，避免过大拉伸 */
-#postBody p:has(img) a:only-of-type img,
-#postBody p:has(img) img:only-of-type {
-  aspect-ratio: auto;
-  max-height: 550px;
-  width: auto !important; /* 如果是单图，不强制拉宽，保持原图大小比例 */
-  max-width: 100%;
-}
-```。">
-<meta property="og:title" content="css图片网格显示">
-<meta property="og:description" content="感觉单列不好看，修改下😊
-精简后放在 `config.json`下`'style':'<style>里面</style>',`
-```css
-/* 核心：只定位那些内部包含图片链接的 p 标签 */
-#postBody p:has(> a > img), 
-#postBody p:has(> img) {
-  display: grid;
-  /* 自适应列数，最小 150px */
-  grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
-  gap: 10px;
-  margin: 1.5rem 0;
-  align-items: start;
-}
-
-/* 隐藏这些特定 p 标签内的换行符 */
-#postBody p:has(img) br {
-  display: none;
-}
-
-/* 处理只有一张图片的情况：让它占满全宽 */
-#postBody p:has(img) a:only-of-type,
-#postBody p:has(img) img:only-of-type {
-  grid-column: 1 / -1;
-}
-
-/* 图片样式设置 */
-#postBody p img {
-  width: 100% !important;
-  aspect-ratio: 1 / 1; /* 默认正方形 */
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-		background-color: #f0f0f0;/* 懒加载 */
-}
-
-/* 只有一张图时，恢复自然高度，避免过大拉伸 */
-#postBody p:has(img) a:only-of-type img,
-#postBody p:has(img) img:only-of-type {
-  aspect-ratio: auto;
-  max-height: 550px;
-  width: auto !important; /* 如果是单图，不强制拉宽，保持原图大小比例 */
-  max-width: 100%;
-}
-```。">
+<meta name="description" content="## Gmeek-html使用
+在需要添加html标签的位置使用code方式，并且后面紧跟着Gmeek-html，然后才是html标签。">
+<meta property="og:title" content="Gmeek使用">
+<meta property="og:description" content="## Gmeek-html使用
+在需要添加html标签的位置使用code方式，并且后面紧跟着Gmeek-html，然后才是html标签。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://baidu8.github.io/post/css-tu-pian-wang-ge-xian-shi.html">
+<meta property="og:url" content="https://baidu8.github.io/post/Gmeek%E4%BD%BF%E7%94%A8.html">
 <meta property="og:image" content="https://q1.qlogo.cn/g?b=qq&nk=726817119&s=100">
-<title>css图片网格显示</title>
-<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+<title>Gmeek使用</title>
+
 
 
 </head>
@@ -139,13 +55,13 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     font-size: 12px;
 }
 </style>
-<style>::-webkit-scrollbar{width:10px;}::-webkit-scrollbar-track{background:#eee;border-radius:10px;}::-webkit-scrollbar-thumb{border-radius:10px;border:2px solid #eee;background:repeating-linear-gradient(45deg,#ff6b6b,#ff6b6b 15px,#feca57 15px,#feca57 30px,#48dbfb 30px,#48dbfb 45px);background-size:130px 130px;background-position:0px var(--scroll-offset,0px);}pre::-webkit-scrollbar,code::-webkit-scrollbar,.markdown-body .highlight pre::-webkit-scrollbar{width:10px;height:10px;}pre::-webkit-scrollbar-thumb,code::-webkit-scrollbar-thumb{background-color:#ccc;border-radius:10px;}pre::-webkit-scrollbar-track,code::-webkit-scrollbar-track{background:transparent;}#postBody p:has(> a > img),#postBody p:has(> img){display:grid;grid-template-columns:repeat(auto-fill,minmax(min(150px,100%),1fr));gap:10px;margin:1.5rem 0;align-items:start;}#postBody p:has(img) br{display:none;}#postBody p:has(img) a:only-of-type,#postBody p:has(img) img:only-of-type{grid-column:1 / -1;}#postBody p img{width:100% !important;aspect-ratio:1 / 1;object-fit:cover;border-radius:8px;display:block;background-color:#f0f0f0;}#postBody p:has(img) a:only-of-type img,#postBody p:has(img) img:only-of-type{aspect-ratio:auto;max-height:550px;width:auto !important;max-width:100%;}</style>
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-note {border-left-color:var(--borderColor-accent-emphasis, var(--color-accent-emphasis));background-color:var(--color-accent-subtle);}.markdown-alert.markdown-alert-note .markdown-alert-title {color: var(--fgColor-accent,var(--color-accent-fg));}</style><style>.markdown-alert.markdown-alert-tip {border-left-color:var(--borderColor-success-emphasis, var(--color-success-emphasis));background-color:var(--color-success-subtle);}.markdown-alert.markdown-alert-tip .markdown-alert-title {color: var(--fgColor-success,var(--color-success-fg));}</style><style>.markdown-alert.markdown-alert-important {border-left-color:var(--borderColor-done-emphasis, var(--color-done-emphasis));background-color:var(--color-done-subtle);}.markdown-alert.markdown-alert-important .markdown-alert-title {color: var(--fgColor-done,var(--color-done-fg));}</style><style>.markdown-alert.markdown-alert-warning {border-left-color:var(--borderColor-attention-emphasis, var(--color-attention-emphasis));background-color:var(--color-attention-subtle);}.markdown-alert.markdown-alert-warning .markdown-alert-title {color: var(--fgColor-attention,var(--color-attention-fg));}</style><style>.markdown-alert.markdown-alert-caution {border-left-color:var(--borderColor-danger-emphasis, var(--color-danger-emphasis));background-color:var(--color-danger-subtle);}.markdown-alert.markdown-alert-caution .markdown-alert-title {color: var(--fgColor-danger,var(--color-danger-fg));}</style>
 
 
 
 <body>
     <div id="header">
-<h1 class="postTitle">css图片网格显示</h1>
+<h1 class="postTitle">Gmeek使用</h1>
 <div class="title-right">
     <a href="https://baidu8.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -153,7 +69,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/baidu8/baidu8.github.io/issues/10" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/baidu8/baidu8.github.io/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -169,48 +85,74 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>感觉单列不好看，修改下😊<br>
-精简后放在 <code class="notranslate">config.json</code>下<code class="notranslate">"style":"&lt;style&gt;里面&lt;/style&gt;",</code></p>
-<div class="highlight highlight-source-css"><pre class="notranslate"><span class="pl-c">/* 核心：只定位那些内部包含图片链接的 p 标签 */</span>
-<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent"></span><span class="pl-c1"></span><span class="pl-c1">&gt;</span> <span class="pl-ent">a</span> <span class="pl-c1">&gt;</span> <span class="pl-ent">img</span>)<span class="pl-kos">,</span> 
-<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent"></span><span class="pl-c1"></span><span class="pl-c1">&gt;</span> <span class="pl-ent">img</span>) {
-  <span class="pl-c1">display</span><span class="pl-kos">:</span> grid;
-  <span class="pl-c">/* 自适应列数，最小 150px */</span>
-  <span class="pl-c1">grid-template-columns</span><span class="pl-kos">:</span> <span class="pl-en">repeat</span>(auto-fill<span class="pl-kos">,</span> <span class="pl-en">minmax</span>(<span class="pl-en">min</span>(<span class="pl-c1">150<span class="pl-smi">px</span></span><span class="pl-kos">,</span> <span class="pl-c1">100<span class="pl-smi">%</span></span>)<span class="pl-kos">,</span> <span class="pl-c1">1<span class="pl-smi">fr</span></span>));
-  <span class="pl-c1">gap</span><span class="pl-kos">:</span> <span class="pl-c1">10<span class="pl-smi">px</span></span>;
-  <span class="pl-c1">margin</span><span class="pl-kos">:</span> <span class="pl-c1">1.5<span class="pl-smi">rem</span></span> <span class="pl-c1">0</span>;
-  <span class="pl-c1">align-items</span><span class="pl-kos">:</span> start;
-}
+<div class="markdown-body" id="postBody"><h2>Gmeek-html使用</h2>
+<p>在需要添加html标签的位置使用code方式，并且后面紧跟着Gmeek-html，然后才是html标签。</p>
+<h3>图片img</h3>
+<p><img src="https://picsum.photos/1920/1080"></p>
+<pre class="notranslate"><code class="notranslate">`Gmeek-html&lt;img src="https://picsum.photos/200"&gt;`
+</code></pre>
+<h3>内嵌框架iframe-网站</h3>
+<p><iframe src="https://music.meekdai.com/#61" width="100%" height="460px" frameborder="0" allowfullscreen="true"></iframe></p>
+<pre class="notranslate"><code class="notranslate">`Gmeek-html&lt;iframe src="https://music.meekdai.com/#61" width="100%" height="460px" frameborder="0" allowfullscreen="true"&gt;&lt;/iframe&gt;`
+</code></pre>
+<h3>内嵌框架iframe-歌曲</h3>
+<p><iframe style='border-radius:12px' src='https://open.spotify.com/embed/track/0U3fV7K4WFfVRgLGEAKh3g?utm_source=generator' width='100%' height='152' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'></iframe></p>
+<pre class="notranslate"><code class="notranslate">`Gmeek-html&lt;iframe style='border-radius:12px' src='https://open.spotify.com/embed/track/0U3fV7K4WFfVRgLGEAKh3g?utm_source=generator' width='100%' height='152' frameBorder='0' allowfullscreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy'&gt;&lt;/iframe&gt;``
+</code></pre>
+<h3>内嵌框架iframe-视频</h3>
+<p><iframe width="100%" height="460px" src="//player.bilibili.com/player.html?aid=18540496&bvid=BV1dW411v78e&cid=30250032&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe></p>
+<pre class="notranslate"><code class="notranslate">`Gmeek-html&lt;iframe src="//player.bilibili.com/player.html?isOutside=true&amp;aid=1604800941&amp;bvid=BV1qm421M7Xs&amp;cid=1557311907&amp;p=1&amp;autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"&gt;&lt;/iframe&gt;`
+</code></pre>
+<h2>参数使用</h2>
+<h3>单篇参数</h3>
+<p>自定义单篇文章页面的style和script</p>
+<pre class="notranslate"><code class="notranslate">&lt;!-- ##{"style":"&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;"}## --&gt;
+&lt;!-- ##{"script":"&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;"}## --&gt;
+</code></pre>
+<h3>同时多种参数</h3>
+<pre class="notranslate"><code class="notranslate">&lt;!-- ##{"script":"&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;","style":"&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;","timestamp":1490764800}## --&gt;
+</code></pre>
+<h3>引入全局参数</h3>
+<p>添加全局文章页面的style和script，在<code class="notranslate">config.json</code>文件中添加</p>
+<pre class="notranslate"><code class="notranslate">"style":"&lt;style&gt;#postBody{font-size:20px}&lt;/style&gt;",
+"script":"&lt;script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'&gt;&lt;/script&gt;",
+</code></pre>
+<h3>导入以前的文章</h3>
+<p>如需修改发布时间，可以在文章最后一行添加如下代码。里面的时间是采用时间戳的形式，可以用如下<a href="https://tool.lu/timestamp" rel="nofollow">网站</a>转换。<br>
+<code class="notranslate">&lt;!-- ##{"timestamp":1490764800}## --&gt;</code></p>
+<h2>高亮警报</h2>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>Useful information that users should know, even when skimming content.</p>
+</div>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>Helpful advice for doing things better or more easily.</p>
+</div>
+<div class="markdown-alert markdown-alert-important"><p class="markdown-alert-title"><svg class="octicon octicon-report mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p><p>Key information users need to know to achieve their goal.</p>
+</div>
+<div class="markdown-alert markdown-alert-warning"><p class="markdown-alert-title"><svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Warning</p><p>Urgent info that needs immediate user attention to avoid problems.</p>
+</div>
+<div class="markdown-alert markdown-alert-caution"><p class="markdown-alert-title"><svg class="octicon octicon-stop mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Caution</p><p>Advises about risks or negative outcomes of certain actions.</p>
+</div>
+<pre class="notranslate"><code class="notranslate">&gt; [!NOTE]
+&gt; Useful information that users should know, even when skimming content.
 
-<span class="pl-c">/* 隐藏这些特定 p 标签内的换行符 */</span>
-<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">br</span> {
-  <span class="pl-c1">display</span><span class="pl-kos">:</span> none;
-}
+&gt; [!TIP]
+&gt; Helpful advice for doing things better or more easily.
 
-<span class="pl-c">/* 处理只有一张图片的情况：让它占满全宽 */</span>
-<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">a</span><span class="pl-kos">:</span><span class="pl-c1">only-of-type</span><span class="pl-kos">,</span>
-<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">img</span><span class="pl-kos">:</span><span class="pl-c1">only-of-type</span> {
-  <span class="pl-c1">grid-column</span><span class="pl-kos">:</span> <span class="pl-c1">1</span> <span class="pl-c1">/</span> <span class="pl-c1">-1</span>;
-}
+&gt; [!IMPORTANT]
+&gt; Key information users need to know to achieve their goal.
 
-<span class="pl-c">/* 图片样式设置 */</span>
-<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span> <span class="pl-ent">img</span> {
-  <span class="pl-c1">width</span><span class="pl-kos">:</span> <span class="pl-c1">100<span class="pl-smi">%</span></span> <span class="pl-k">!important</span>;
-  <span class="pl-c1">aspect-ratio</span><span class="pl-kos">:</span> <span class="pl-c1">1</span> <span class="pl-c1">/</span> <span class="pl-c1">1</span>; <span class="pl-c">/* 默认正方形 */</span>
-  <span class="pl-c1">object-fit</span><span class="pl-kos">:</span> cover;
-  <span class="pl-c1">border-radius</span><span class="pl-kos">:</span> <span class="pl-c1">8<span class="pl-smi">px</span></span>;
-  <span class="pl-c1">display</span><span class="pl-kos">:</span> block;
-		<span class="pl-c1">background-color</span><span class="pl-kos">:</span> <span class="pl-pds"><span class="pl-kos">#</span>f0f0f0</span>;<span class="pl-c">/* 懒加载 */</span>
-}
+&gt; [!WARNING]
+&gt; Urgent info that needs immediate user attention to avoid problems.
 
-<span class="pl-c">/* 只有一张图时，恢复自然高度，避免过大拉伸 */</span>
-<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">a</span><span class="pl-kos">:</span><span class="pl-c1">only-of-type</span> <span class="pl-ent">img</span><span class="pl-kos">,</span>
-<span class="pl-kos">#</span><span class="pl-c1">postBody</span> <span class="pl-ent">p</span><span class="pl-kos">:</span><span class="pl-c1">has</span>(<span class="pl-ent">img</span>) <span class="pl-ent">img</span><span class="pl-kos">:</span><span class="pl-c1">only-of-type</span> {
-  <span class="pl-c1">aspect-ratio</span><span class="pl-kos">:</span> auto;
-  <span class="pl-c1">max-height</span><span class="pl-kos">:</span> <span class="pl-c1">550<span class="pl-smi">px</span></span>;
-  <span class="pl-c1">width</span><span class="pl-kos">:</span> auto <span class="pl-k">!important</span>; <span class="pl-c">/* 如果是单图，不强制拉宽，保持原图大小比例 */</span>
-  <span class="pl-c1">max-width</span><span class="pl-kos">:</span> <span class="pl-c1">100<span class="pl-smi">%</span></span>;
-}</pre></div></div>
+&gt; [!CAUTION]
+&gt; Advises about risks or negative outcomes of certain actions.
+</code></pre>
+<p><a href="https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html" rel="nofollow">Gmeek快速上手</a><br>
+<a href="https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-wen-zhang-cha-ru-html-biao-qian.html" rel="nofollow">Gmeek进阶html标签</a><br>
+其他👇</p>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><a href="https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-you-shang-jiao-yuan-an-niu-pei-zhi.html" rel="nofollow">配置单页</a><br>
+<a href="https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91static-wen-jian-jia-shi-yong.html" rel="nofollow">static文件夹使用</a><br>
+<a href="https://blog.meekdai.com/post/%E3%80%90Gmeek-jin-jie-%E3%80%91-cha-jian-gong-neng-de-shi-yong.html" rel="nofollow">插件</a></p>
+</div></div>
 <div style="font-size:small;margin-top:8px;float:right;">🌹转载请注明出处🌹</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
@@ -374,6 +316,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 </script>
-<script src='/gundong.js'></script><script src='https://gistcdn.githack.com/baidu8/d0c62a035f1e9d35682918737e77bc83/raw/xiaxue.js'></script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
 
 </html>
