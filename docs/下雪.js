@@ -30,7 +30,7 @@
         canvas.height = height;
     }
 
-    snowImg.src = "雪花.png"; // 请确保该图片路径正确
+    snowImg.src = "/雪花.png"; // 请确保该图片路径正确
 
     // 3. 雪花类定义
     class Snow {
