@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>江大爷的博客</title><link>https://baidu8.github.io</link><description>梦到什么说什么</description><copyright>江大爷的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=726817119&amp;s=100</url><title>avatar</title><link>https://baidu8.github.io</link></image><lastBuildDate>Sun, 11 Jan 2026 12:22:31 +0000</lastBuildDate><managingEditor>江大爷的博客</managingEditor><ttl>60</ttl><webMaster>江大爷的博客</webMaster><item><title>css图片网格显示</title><link>https://baidu8.github.io/post/10.html</link><description>感觉单列不好看，修改下😊
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>江大爷的博客</title><link>https://baidu8.github.io</link><description>梦到什么说什么</description><copyright>江大爷的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q1.qlogo.cn/g?b=qq&amp;nk=726817119&amp;s=100</url><title>avatar</title><link>https://baidu8.github.io</link></image><lastBuildDate>Mon, 12 Jan 2026 16:55:54 +0000</lastBuildDate><managingEditor>江大爷的博客</managingEditor><ttl>60</ttl><webMaster>江大爷的博客</webMaster><item><title>免费二级域名</title><link>https://baidu8.github.io/post/11.html</link><description>![](https://image.thum.io/get/https://nic.eu.org/)
+
+### nic.eu.org
+自1996年就开始免费提供二级域名[https://nic.eu.org/](https://nic.eu.org/)
+全靠公益组织审核，所以很慢，申请后就慢慢等吧，不用抱太大希望
+### nic.gv.uy
+免费提供一年，后续如何还不知，[https://nic.gv.uy/](https://nic.gv.uy/)还能领免费一年虚拟主机
+### domain.stackryze.com
+每人可以免费创建5个二级域名，永久免费，一年一续期[https://domain.stackryze.com/](https://domain.stackryze.com/)
+
+&gt; 翻译后页面可能会出错，尽量不要翻译
+。</description><guid isPermaLink="true">https://baidu8.github.io/post/11.html</guid><pubDate>Mon, 12 Jan 2026 16:55:20 +0000</pubDate></item><item><title>css图片网格显示</title><link>https://baidu8.github.io/post/10.html</link><description>感觉单列不好看，修改下😊
 精简后放在 `config.json`下`'style':'&lt;style&gt;里面&lt;/style&gt;',`
 ```css
 /* 核心：只定位那些内部包含图片链接的 p 标签 */
