@@ -14,8 +14,8 @@
     "urlMode":"issue",
     "showPostSource": 1,
     "bottomText": "🌹转载请注明出处🌹",
-    "indexScript":"<script src='/下雪.js'></script>",
+    "indexScript":"<script src='https://rawcdn.githack.com/baidu8/texiao/refs/heads/main/tqsj.js'></script>",
     "allHead": "<link rel='stylesheet' type='text/css' href='/zdy.css'><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>",
-    "script": "<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script><script src='/下雪.js'></script>",
+    "script": "<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script><script src='https://rawcdn.githack.com/baidu8/texiao/refs/heads/main/tqsj.js'></script>",
     "GMEEK_VERSION": "last"
 }
